@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deleve</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="fixed inset-x-0 z-50 bg-slate-200">
+      <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-5">
+        <div class="flex justify-between mt-0 py-2">
+          <!-- logo -->
+          <div class="pl-4">
+            <a class="flex-shrink-0" href="#">
+              <img class="block h-12 w-auto" src="./assets/images/deleva logo.png" alt="Logo">
+            </a>
+          </div>
+          <!-- primary nav -->
+          <div class="items-center hidden space-x-1 md:flex">
+            <div
+              class="w-full flex-grow lg:flex  lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20">
+              <ul class="list-reset lg:flex  justify-end flex-1 items-center">
+                <li class="mr-3">
+                  <a class="inline-block py-2 px-4 text-black     no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700"
+                    href="#">Home</a>
+                </li>
+                <li class="mr-3">
+                  <a class="inline-block text-black no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700 py-2 px-4"
+                    href="#">BLog</a>
+                </li>
+                <li class="mr-3">
+                  <a class="inline-block text-black no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700 py-2 px-4"
+                    href="#">Contact</a>
+                </li>
+                <li class="mr-3">
+                  <a class="inline-block text-black no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700 py-2 px-4"
+                    href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--secondary navbar-->
+          <!--=====mobile menu=======-->
+          <div class=" flex items-center lg:hidden pr-4 ">
+            <button id="navbar-toggle"
+              class="flex items-end px-2 py-2 border rounded text-gray-500 border-gray-600 hover:text-yellow-800 hover:border-yellow-500 appearance-none focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-6 w-6">
+                <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ============mobile menu=============== -->
+      <div id="navbar-collapse"
+        class="flex-col hidden mt-3 lg:flex-row lg:ml-auto lg:mt-0 bg-white lg:bg-transparent lg:hidden">
+
+        <ul class="list-reset  flex flex-col justify-center items-center">
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-black  no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700"
+              href="#">Home</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700 py-2 px-4"
+              href="#">BLog</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700 py-2 px-4"
+              href="#">Contact</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-yellow-600 hover:border-b hover:border-yellow-700 py-2 px-4"
+              href="#">About US</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!--========hero content =========-->
+    <main>
+      <div class="relative overflow-hidden h-[100vh] w-full bg-no-repeat bg-cover"
+        style=" background-image: url('./assets/images/Deleva\ png\ .png');">
+        <div class="absolute inset-x-0 bottom-0">
+          <svg viewBox="0 0 224 12" fill="currentColor" class="w-full -mb-1 text-white" preserveAspectRatio="none">
+            <path
+              d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z">
+            </path>
+          </svg>
+        </div>
+        <div aria-hidden="true" class="absolute inset-0 w-full       h-[100vh] bg-slate-600 bg-opacity-75">
+        </div>
+        <!---========hero content======-->
+        <div class="px-4 py-40 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-40">
+          <div class="relative   max-w-2xl mx-auto max-w-xl md:max-w-2xl text-center">
+            <h1 class="mb-6 font-sans text-xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+              Disaptch companion that automates <br class=" hidden md:block" />
+              multiple deliveries for people
+              <span class="relative inline-block">
+                and businesses
+                <div class="w-full h-3 -mt-3 bg-deep-purple-accent-400"></div>
+              </span>
+            </h1>
+            <!---======hero button=======-->
+            <div class="flex justify-center items-center mt-10">
+              <button
+                class="bg-yellow-600 text-gray-900 font-bold text-xl h-12 w-[24rem] px-2 rounded-lg shadow-lg duration-300 transform">
+                Do multiple deliveries in minutes
+              </button>
+            </div>
+            <a href="/" aria-label="Scroll down"
+              class="flex items-center justify-center mt-64 w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 12 12" fill="currentColor">
+                <path
+                  d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </header>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
